@@ -11811,7 +11811,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[423]:</div>
+<div class="prompt input_prompt">In&nbsp;[434]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -11838,20 +11838,19 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[424]:</div>
+<div class="prompt input_prompt">In&nbsp;[435]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use 10 variables/features</span>
 <span class="c1"># radius, texture, perimeter, area, smoothness, compactness, concavity, concae points,symmetry, fractal dimension</span>
 <span class="n">cancer_X</span> <span class="o">=</span> <span class="n">cancer_data</span><span class="p">[:,:</span><span class="mi">10</span><span class="p">]</span>
 
-<span class="c1"># Split the data into training/testing sets</span>
+<span class="c1"># Split the data into training/testing sets (X)</span>
 <span class="n">cancer_X_train</span> <span class="o">=</span> <span class="n">cancer_X</span><span class="p">[:]</span>
 <span class="n">cancer_X_test</span> <span class="o">=</span> <span class="n">cancer_test</span>
 
-<span class="c1"># Split the targets into training/testing sets</span>
+<span class="c1"># Specifying the targets for training set (Y)</span>
 <span class="n">cancer_y_train</span> <span class="o">=</span> <span class="n">cancer_data</span><span class="p">[:,</span><span class="mi">10</span><span class="p">]</span>
-<span class="c1">#cancer_y_test = [[0]] #Malign type of Cancer</span>
 </pre></div>
 
 </div>
@@ -11861,10 +11860,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[425]:</div>
+<div class="prompt input_prompt">In&nbsp;[436]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create Linear classifiers - logistic regression object</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a Linear classifier/logistic regression object</span>
 <span class="n">regr</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">SGDClassifier</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
 
 <span class="c1"># Train the model using the training sets</span>
@@ -11881,7 +11880,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[425]:</div>
+<div class="prompt output_prompt">Out[436]:</div>
 
 
 
@@ -11902,7 +11901,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[431]:</div>
+<div class="prompt input_prompt">In&nbsp;[437]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Make predictions using the testing set</span>
@@ -11916,7 +11915,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[432]:</div>
+<div class="prompt input_prompt">In&nbsp;[438]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># The coefficients</span>
@@ -11938,9 +11937,9 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Coefficients: 
- [[  4.16748179e+03   5.92109781e+03   2.42505203e+04  -2.19302810e+03
-    3.81184964e+01  -1.92671696e+01  -7.25458221e+01  -3.36655047e+01
-    7.43873569e+01   3.09475806e+01]]
+ [[  4.17130593e+03   6.11110822e+03   2.43415713e+04  -2.46357960e+03
+    3.81360562e+01  -1.71233091e+01  -7.00246670e+01  -3.26556452e+01
+    7.43951613e+01   3.14581165e+01]]
 </pre>
 </div>
 </div>
@@ -11951,7 +11950,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[433]:</div>
+<div class="prompt input_prompt">In&nbsp;[439]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Checking predicted category</span>
@@ -11968,7 +11967,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[433]:</div>
+<div class="prompt output_prompt">Out[439]:</div>
 
 
 
@@ -12038,7 +12037,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[408]:</div>
+<div class="prompt input_prompt">In&nbsp;[440]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <span class="n">fetch_20newsgroups</span>
@@ -12066,7 +12065,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[409]:</div>
+<div class="prompt input_prompt">In&nbsp;[441]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Observations in the training dataset</span>
@@ -12085,7 +12084,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[409]:</div>
+<div class="prompt output_prompt">Out[441]:</div>
 
 
 
@@ -12112,7 +12111,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[410]:</div>
+<div class="prompt input_prompt">In&nbsp;[442]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#How many features are in the training dataset?</span>
@@ -12129,7 +12128,7 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[410]:</div>
+<div class="prompt output_prompt">Out[442]:</div>
 
 
 
@@ -12155,7 +12154,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[411]:</div>
+<div class="prompt input_prompt">In&nbsp;[443]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#How well did your model perform?</span>
@@ -12205,7 +12204,7 @@ Variance score: 0.87
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[412]:</div>
+<div class="prompt input_prompt">In&nbsp;[444]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Which category is Hockey? 0 or 1? Which category is baseball?</span>
@@ -12222,7 +12221,7 @@ Variance score: 0.87
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[412]:</div>
+<div class="prompt output_prompt">Out[444]:</div>
 
 
 
