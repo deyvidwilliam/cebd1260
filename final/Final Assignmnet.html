@@ -11812,7 +11812,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[572]:</div>
+<div class="prompt input_prompt">In&nbsp;[679]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -11839,7 +11839,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[573]:</div>
+<div class="prompt input_prompt">In&nbsp;[680]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use 10 variables/features</span>
@@ -11861,7 +11861,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[574]:</div>
+<div class="prompt input_prompt">In&nbsp;[681]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a Linear classifier/logistic regression object</span>
@@ -11881,7 +11881,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[574]:</div>
+<div class="prompt output_prompt">Out[681]:</div>
 
 
 
@@ -11902,7 +11902,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[575]:</div>
+<div class="prompt input_prompt">In&nbsp;[682]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Make predictions using the testing set</span>
@@ -11916,7 +11916,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[576]:</div>
+<div class="prompt input_prompt">In&nbsp;[683]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># The coefficients</span>
@@ -11938,9 +11938,9 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Coefficients: 
- [[  4.21493236e+03   6.52265869e+03   2.46893861e+04  -2.78616025e+03
-    3.94115505e+01  -1.40613944e+01  -6.63528200e+01  -3.17939906e+01
-    7.54799688e+01   3.19037461e+01]]
+ [[  4.14833507e+03   6.18566597e+03   2.41063996e+04  -2.16961498e+03
+    3.72265869e+01  -1.95288762e+01  -7.37959053e+01  -3.52752081e+01
+    7.33272633e+01   3.10334287e+01]]
 </pre>
 </div>
 </div>
@@ -11951,11 +11951,11 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[577]:</div>
+<div class="prompt input_prompt">In&nbsp;[684]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Checking predicted category</span>
-<span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">cancer_y_pred</span><span class="p">)</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Predicted category: </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">cancer_y_pred</span><span class="p">)</span> 
 </pre></div>
 
 </div>
@@ -11968,29 +11968,14 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[577]:</div>
+<div class="prompt"></div>
 
 
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>0</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1.0</td>
-    </tr>
-  </tbody>
-</table>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Predicted category: 
+ [ 1.]
+</pre>
 </div>
-</div>
-
 </div>
 
 </div>
@@ -12038,7 +12023,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[578]:</div>
+<div class="prompt input_prompt">In&nbsp;[685]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <span class="n">fetch_20newsgroups</span>
@@ -12066,7 +12051,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[579]:</div>
+<div class="prompt input_prompt">In&nbsp;[686]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Observations in the training dataset</span>
@@ -12100,14 +12085,14 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>There are 1,197 observations in the training dataset</p>
+<p><strong> There are 1,197 observations in the training dataset </strong></p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[580]:</div>
+<div class="prompt input_prompt">In&nbsp;[687]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#How many features are in the training dataset?</span>
@@ -12141,14 +12126,46 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>There are 18,571 features in the training dataset</p>
+<p><strong> There are 18,571 features in the training dataset </strong></p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[581]:</div>
+<div class="prompt input_prompt">In&nbsp;[688]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Confirming observations/features numbers: </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">text_clf</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s1">&#39;vect&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">twenty_train</span><span class="o">.</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Confirming observations/features numbers: 
+ (1197, 18571)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[689]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#How well did your model perform?</span>
@@ -12198,10 +12215,12 @@ Variance score: 0.87
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[582]:</div>
+<div class="prompt input_prompt">In&nbsp;[690]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Which category is Hockey? 0 or 1? Which category is baseball?</span>
+
+<span class="c1">#Looking at target names within the dataset</span>
 <span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">twenty_test</span><span class="o">.</span><span class="n">target_names</span><span class="p">)</span>
 </pre></div>
 
@@ -12215,7 +12234,7 @@ Variance score: 0.87
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[582]:</div>
+<div class="prompt output_prompt">Out[690]:</div>
 
 
 
@@ -12248,11 +12267,45 @@ Variance score: 0.87
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[691]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Using prediction</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Baseball: &#39;</span><span class="p">,</span><span class="n">text_clf</span><span class="o">.</span><span class="n">predict</span><span class="p">([</span><span class="s2">&quot;Baseball&quot;</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hockey:&#39;</span><span class="p">,</span><span class="n">text_clf</span><span class="o">.</span><span class="n">predict</span><span class="p">([</span><span class="s2">&quot;Hockey&quot;</span><span class="p">]))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Baseball:  [0]
+Hockey: [1]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Baseball is category=0 and Hokey is category=1</p>
+<p><strong> Baseball is category=0 and Hokey is category=1 </strong></p>
 
 </div>
 </div>
